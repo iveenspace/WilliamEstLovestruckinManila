@@ -345,6 +345,13 @@
                 if (stream) {
                     stream.getTracks().forEach(track => track.stop());
                 }
+               
+                if (facingMode === 'user') {
+                    video.style.transform = "scaleX(-1)"; // mirrored
+                } else {
+                    video.style.transform = "scaleX(1)"; // normal
+                
+                }
             
                 try {
                     statusMessage.textContent = "Requesting camera access...";
