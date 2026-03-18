@@ -166,11 +166,11 @@
         }
         
         .btn-primary {
-            background-image: linear-gradient(135deg, #3b82f6, #2563eb);
+            background-image: linear-gradient(135deg, #FFFFFF, #FFFFFF);
         }
         
         .btn-primary:hover:not(:disabled) {
-            background-image: linear-gradient(135deg, #4f8df9, #3573f0);
+            background-image: linear-gradient(135deg, #FFFFFF, #FFFFFF);
         }
         
         .btn-secondary {
@@ -178,7 +178,7 @@
         }
         
         .btn-secondary:hover:not(:disabled) {
-            background-image: linear-gradient(135deg, #5b6675, #475163);
+            background-image: linear-gradient(135deg, #FFFFFF, #FFFFFF);
         }
         
         .camera-btn {
@@ -223,7 +223,7 @@
 <body class="p-4">
     <div class="max-w-4xl mx-auto">
         <header class="text-center mb-8">
-            <h1 class="text-6xl font-bold text-[#FFFFFF]">WILLIAMEST LOVESTRUCK IN MANILA </h1>
+            <h1 class="text-7xl font-bold text-[#FFFFFF]">WILLIAMEST LOVESTRUCK IN MANILA </h1>
         </header>
         
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -418,13 +418,13 @@
                     
                     const placeholderContent = document.createElement('div');
                     placeholderContent.className = 'flex flex-col items-center justify-center h-full w-full';
-                    placeholderContent.style.backgroundColor = '#782821';
+                    placeholderContent.style.backgroundColor = '#FFFFFF';
                     placeholderContent.innerHTML = `
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mb-3 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
                         </svg>
-                        <span class="font-medium" style="color: #FF81C0;">Photo ${i + 1}</span>
+                        <span class="font-medium" style="color: #FFFFFF;">Photo ${i + 1}</span>
                     `;
                     slot.appendChild(placeholderContent);
                     
@@ -719,7 +719,7 @@
                     // Footer section - matching the exact layout with gold colors
                     const footerStartY = stripHeight - 70;
                     
-                    ctx.fillStyle = '#DC9D93';
+                    ctx.fillStyle = '#FFFFFF';
                     ctx.font = 'bold 18px "Montserrat", sans-serif';
                     ctx.fillText('WILLIAMEST LOVESTRUCK IN MANILA', stripWidth / 2, footerStartY + 10);
                     
