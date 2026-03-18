@@ -341,7 +341,7 @@
             let currentFacingMode = 'user';
             
             // Initialize camera
-            if (facingMode = 'user') {
+           async function initCamera(facingMode = 'user') {
                 video.style.transform = "scaleX(-1)"; // mirrored
             } else {
                 video.style.transform = "scaleX(1)"; // normal
