@@ -462,6 +462,18 @@
                             width: canvas.width,
                             height: canvas.height
                         });
+
+                        if (currentFacingMode === 'user') {
+                            // Flip horizontally (fix mirrored photo)
+                            ctx.translate(canvas.width, 0);
+
+                            // Reset transform so it doesn't affect next drawings
+                            ctx.scale(-1, 1);
+                            
+                        }
+
+                        ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+                        ctx.setTransform(1, 0, 0, 1, 0, 0);
                         
                         const aspectRatio = canvas.width / canvas.height;
                         photoSlots[photosTaken].style.aspectRatio = aspectRatio;
