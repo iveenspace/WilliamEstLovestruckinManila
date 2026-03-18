@@ -664,11 +664,11 @@
                             const yPos = photoStartY + (i * (photoHeight + photoSpacing));
                             
                             // Draw fixed rectangle frame background
-                            ctx.fillStyle = '#FFFF00';
+                            ctx.fillStyle = '#DC9D93';
                             ctx.fillRect(photoX, yPos, photoWidth, photoHeight);
                             
                             // Add frame border
-                            ctx.strokeStyle = '#FFFF00';
+                            ctx.strokeStyle = '#DC9D93';
                             ctx.lineWidth = 2;
                             ctx.strokeRect(photoX, yPos, photoWidth, photoHeight);
                             
@@ -722,10 +722,6 @@
                     ctx.fillStyle = '#DC9D93';
                     ctx.font = 'bold 18px "Montserrat", sans-serif';
                     ctx.fillText('WILLIAMEST LOVESTRUCK IN MANILA', stripWidth / 2, footerStartY + 10);
-                    
-                    ctx.fillStyle = '#DC9D93';
-                    ctx.font = 'bold 15px "Montserrat", sans-serif';
-                    ctx.fillText('WILLIAMEST LOVESTRUCK IN MANILA', stripWidth / 2, footerStartY + 30);
                     
                     // Create download
                     const link = document.createElement('a');
